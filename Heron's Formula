@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class HeronFormula {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the length of the first side : ");
+		double x = sc.nextDouble();
+		
+		System.out.println("Enter the length of the second size : ");
+		double y = sc.nextDouble();
+		
+		System.out.println("Enter the length of the third size : ");
+		double z = sc.nextDouble();
+		
+		double s = ( x + y + z )/2;
+		
+		double area = Math.sqrt(s * (s-x) * (s-y) * (s-z));
+		
+		System.out.println("The area of the triangle whose 3 sides is given is : " + area);
+
+	}
+
+}
